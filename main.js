@@ -34,10 +34,26 @@ const menuItem = [
                         }
                     );
 
+                    win2.webContents.openDevTools();
                     win2.loadURL("https://www.quran.com");
                     win2.once('ready-to-show', () => {
                         win2.show();
                     })
+                }
+            },
+            {
+                label: "Open Camera",
+                click: async () => {
+                        const win3 = new BrowserWindow({
+                                height: 300,
+                                width: 400
+                        });
+
+                        win3.webContents.openDevTools();
+                        win3.loadFile("camera.html");
+                        win3.on('ready-to-show', () => {
+                            win3.show();
+                        })
                 }
             },
             {
@@ -49,6 +65,7 @@ const menuItem = [
                     app.quit()
                 }
             },
+        
         ]
     },
     {
