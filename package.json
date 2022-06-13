@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/maquadir/CodeReview/issues"
   },
-  "homepage": "https://github.com/maquadir/CodeReview#readme"
+  "homepage": "https://github.com/maquadir/CodeReview#readme",
+  "devDependencies": {
+    "electron": "^19.0.4"
+  }
 }
